@@ -11,10 +11,28 @@
         <div class="card">
             <h1>Event Invitation</h1>
             <p>You are cordially invited to our special event!</p>
-            <p><strong>Date:</strong> [Event Date]</p>
-            <p><strong>Time:</strong> [Event Time]</p>
-            <p><strong>Location:</strong> [Event Location]</p>
-            <p>RSVP by [RSVP Date]</p>
+            <p><strong>Date:</strong> 23 July, 2023</p>
+            <p><strong>Time:</strong>5 to 9:30 PM</p>
+            <p><strong>Location:</strong>Hamilton</p>
+            <p>RSVP by 22 July, 2023</p>
+            
+            <!-- RSVP Form -->
+            <form action="rsvp.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="attendees">Number of Attendees:</label>
+                <input type="number" id="attendees" name="attendees" required>
+                
+                <label for="message">Message (optional):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                
+                <button type="submit">RSVP</button>
+            </form>
+            <!-- End of RSVP Form -->
         </div>
     </div>
 </body>
